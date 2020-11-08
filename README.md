@@ -21,8 +21,8 @@ Usage of proxy:
 
 ### Via Golang
 
-1. Run `go get github.com/segmentio/segment-proxy`.
-2. Run `segment-proxy`.
+1. Run `go get github.com/internxt/segment-reverse-proxy`.
+2. Run `segment-reverse-proxy`.
 
 ### Via prebuilt binaries.
 
