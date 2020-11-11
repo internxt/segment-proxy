@@ -20,7 +20,7 @@ RUN go build -a -installsuffix cgo -ldflags "-w -s -extldflags '-static' -X main
 
 FROM scratch
 
-COPY --from=builder /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/ca-certificates.crt
+COPY --from=builder /etc/letsencrypt/live/ps.internxt.com/fullchain.cert /etc/ssl/certs/ca-certificates.crt
 COPY --from=builder /proxy /proxy
 
 EXPOSE ${PORT}
